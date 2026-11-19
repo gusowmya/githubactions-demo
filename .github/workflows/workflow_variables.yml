@@ -8,16 +8,11 @@ env:
   
 jobs:
  greeting_job: 
-  runs-on: ubuntu_latest
-  env:
-    Greeting: hello
-  steps:
-    - name: "hello"
-      run: echo "$Greeting $First_Name is using $cloud!"
-      env:
-       First_Name: Sowmya
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    runs-on: ubuntu_latest
+    env:
+      Greeting: hello
+    steps:
+      - name: "hello"
+        run: echo "$Greeting $First_Name is using $cloud!"
+        env:
+          First_Name: Sowmya
